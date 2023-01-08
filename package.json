@@ -1,0 +1,11 @@
+{
+  "name": "@ds.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Rezuan-Ahmed-git/practice-design-system-sl.git",
+  "author": "Rezuan Ahmed <rezuan.ahmed.pro@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.4.0"
+  }
+}
