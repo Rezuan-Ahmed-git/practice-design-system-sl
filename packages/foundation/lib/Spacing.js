@@ -1,4 +1,5 @@
 const spaces = {
+    none: 'none',
     xxxs: 'xxxs',
     xxs: 'xxs',
     xs: 'xs',
@@ -7,6 +8,6 @@ const spaces = {
     lg: 'lg',
     xl: 'xl',
     xxl: 'xxl',
-    xxxl: 'xxxl'
+    xxxl: 'xxxl',
 };
 export default Object.freeze(spaces);
