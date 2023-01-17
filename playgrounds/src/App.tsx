@@ -12,7 +12,7 @@ const colorOptions = [
 const App = () => {
   return (
     <div className="app">
-      <h1>Hello MonoRepo</h1>
+      {/* <h1>Hello MonoRepo</h1>
       <Margin bottom top left right>
         <Text size="xl">Hellow World</Text>
       </Margin>
@@ -22,7 +22,7 @@ const App = () => {
         onClick={() => alert('Hello World')}
       >
         Click Me
-      </Button>
+      </Button> */}
 
       <Margin>
         <Text>This is a Select</Text>
@@ -31,6 +31,9 @@ const App = () => {
             label="Select a Color"
             options={colorOptions}
             onOptionSelected={console.log}
+            // renderOption={({ option, getOptionRecommendedProps }) => (
+            //   <li {...getOptionRecommendedProps()}>{option.label} </li>
+            // )}
           />
         </Margin>
         <Text>End of Select</Text>
