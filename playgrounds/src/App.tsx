@@ -1,4 +1,4 @@
-import { Button, Color, Text, Margin, Select } from '@ds.e/react/lib';
+import { Button, Color, Text, Margin, Select, Pelect } from '@ds.e/react/lib';
 import './App.css';
 
 const colorOptions = [
@@ -27,12 +27,50 @@ const App = () => {
       <Margin>
         <Text>This is a Select</Text>
         <Margin top bottom space="xs">
-          <Select
+          {/* <Select
             label="Select a Color"
             options={colorOptions}
             onOptionSelected={console.log}
-            // renderOption={({ option, getOptionRecommendedProps }) => (
-            //   <li {...getOptionRecommendedProps()}>{option.label} </li>
+            renderOption={({
+              option,
+              getOptionRecommendedProps,
+              isSelected,
+            }) => (
+              <li
+                {...getOptionRecommendedProps({
+                  className: `custom-select-option ${
+                    isSelected ? 'custom-select-option--selected' : ''
+                  }`,
+                })}
+              >
+                <div style={{ display: 'flex' }}>
+                  <input type="checkbox" checked={isSelected} />
+                  <Text>{option.label}</Text>
+                </div>
+              </li>
+            )}
+          /> */}
+          <Pelect
+            options={colorOptions}
+            label="Colors"
+            onOptionSelected={console.log}
+            // renderOption={({
+            //   option,
+            //   getOptionRecommendedProps,
+            //   isSelected,
+            // }) => (
+            //   <li
+            //     {...getOptionRecommendedProps({
+            //       className: `custom-select-option ${
+            //         isSelected ? 'custom-select-option--selected' : ''
+            //       }`,
+            //     })}
+            //   >
+            //     <div style={{ display: 'flex' }}>
+            //       <input type="checkbox" checked={isSelected} />
+            //       <Text>{option.label}</Text>
+            //     </div>
+            //   </li>
             // )}
           />
         </Margin>

@@ -1,3 +1,14 @@
 .app {
     width: 500px;
 }
+
+.custom-select-option {
+	padding: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.custom-select-option--selected {
+	background-color: green;
+	color: white;
+}
