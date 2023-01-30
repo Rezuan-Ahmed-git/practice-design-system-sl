@@ -16,18 +16,18 @@ const KEY_CODES = {
   ESC: 27,
 };
 
-interface SelectOption {
+export interface SelectOption {
   label: string;
   value: string;
 }
 
-interface RenderOptionProps {
+export interface RenderOptionProps {
   isSelected: boolean;
   option: SelectOption;
   getOptionRecommendedProps: (overrideProps?: object) => object;
 }
 
-interface SelectProps {
+export interface SelectProps {
   label?: string;
   options?: Array<SelectOption>;
   onOptionSelected?: (option: SelectOption, optionIndex: number) => void;
